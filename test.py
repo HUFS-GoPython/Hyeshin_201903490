@@ -1,60 +1,26 @@
-celsius = float(input('섭씨를 입력해주세요: '))
-fahrenheit = celsius * 1.8 + 32
-print(f"화씨는 {fahrenheit}도 입니다.")
+#1주차 복습
 
-# ============================================================
-name = input('수취인 성명을 입력해주세요: ')
-address = input('수취인의 주소를 입력해주세요: ')
-weight = float(input('물건의 무게(g단위)를 입력해주세요: '))
-delivery_cost = 3000
-package_cost = weight * 5
-total_cost = delivery_cost + package_cost
+#파이썬의 장점
+# - 간결하고 쉬움
+# - 범용적으로 사용가능한 언어
 
-print(f"==택배정보==")
-print(f"수취인 성명: <{name}>")
-print(f"수취인 주소: <{address}>")
-print(f"배송비: {delivery_cost}원")
-print(f"물건 비용: <{package_cost}>원")
-print(f"총합계: <{total_cost}>원")
+#값 출력해보기
+print(23) #23이라는 값이 출력됨
 
-# ============================================================
-num = int(input('정수를 입력하세요: '))
-print(num % 3 == 0) #3의 배수 여부 확인
-print(num % 2 == 0) #홀수 여부 확인
+#파이썬의 데이터타입
+print(type(True)) #bool, 불리언
+print(type(21)) #int, 정수
+print(type(24.5)) #float, 부동소수점/실수
+print(type('안녕')) #str, 문자열
 
-# =============================================================
-num = int(input('점수를 입력해주세요: '))
-absence = int(input('결석한 횟수를 입력해주세요: '))
-result = None
+#변수에 값 할당
+# =를 사용하여 변수에 값 할당
+# a = 5 는 a라는 변수에 5라는 값을 할당한다는 뜻임
+a = 5
+print(a) #5가 출력됨
 
-if num >= 90:
-    if absence >= 2 :
-        result = 'F'
-    else:
-        result = 'A'
-elif num >= 80:
-    if absence >= 2 :
-        result = 'F'
-    else:
-        result = 'B'
-elif num >= 70:
-    result = 'C'
-else :
-    result = 'D'
-
-print(f"학점은 {result}입니다.")
-
-# ============================================================
-fixed_id = 'hi'
-fixed_pw = 'bye'
-
-your_id = input('ID를 입력해주세요: ')
-your_pw = input('PW를 입력해주세요: ')
-
-if your_id == fixed_id:
-    if your_pw == fixed_pw:
-        print('로그인에 성공하였습니다.')
-    else:
-        print('비밀번호가 일치하지 않습니다.')
-else :
-    print('존재하지 않는 아이디입니다.')
+#변수명 짓는 방법
+# 소문자, 대문자, 숫자, 언더바만 사용가능
+# 대소 문자를 구분함
+# 시작 시에는 숫자 사용 불가.문자나 언더바로 시작해야함
+# 파이썬 예약어는 변수명으로 사용 불가 
